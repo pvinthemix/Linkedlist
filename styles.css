@@ -1,0 +1,17 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  height: 1em;
+}
+
+.main-content {
+  background-color: #455A64;
+  display: block;
+  height: 100%;
+}
+
+.bookmarks {
+
+}
