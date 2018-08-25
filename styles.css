@@ -76,4 +76,69 @@ section {
   position: absolute;
   right: 0px;
   width: 50%;
+  height: 100%;
+  list-style-type: none;
+  overflow: scroll;
 }
+
+.single-bookmark {
+  border: 2px solid #607D8B;
+  height: 12em;
+  width: 94%;
+  background-color: #FFFFFF;
+  margin-top: 1.5em;
+}
+
+.bookmark-website-title {
+  color: #455A64;
+  padding-left: .5em;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-top: .3em;
+  padding-bottom: .3em;
+}
+
+.bookmark-website-url {
+  color: #607D8B;
+  padding: 0 0 .8em 1em;
+  text-decoration: underline #F2F4F4;
+  margin-top: .6em;
+  font-size: 1.5em;
+}
+
+hr {
+  margin: 0 1em 0 1em;
+  height: 2px;
+  border-top: 1px solid #ccc;
+}
+
+.read-button, .delete-button{
+  float: left;
+  border: none;
+  text-decoration: underline #F2F4F4;
+  color: #455A64;
+  font-size: 1.3em;
+}
+
+.read-button {
+  margin: .5em 0 0 .8em;
+}
+
+.delete-button {
+  float: right;
+  margin: .5em .8em 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
