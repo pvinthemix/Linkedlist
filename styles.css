@@ -24,7 +24,7 @@ section {
 
 .linked-list-header {
   text-align: center;
-  margin: 35% 1% 0 1%;
+  margin: 30% 1% 0 1%;
   display: block;
   font-size: 4em;
   font-weight: 800;
@@ -56,6 +56,14 @@ section {
 
 .enter {
   display: block;
+  height: 2em;
+  width: 65%;
+  background-color: #FFC107;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1.4em;
+  font-weight: 800;
+  
 }
 
 .bookmarks {
