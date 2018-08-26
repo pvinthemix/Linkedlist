@@ -1,4 +1,4 @@
-console.log("it's alive!🍔")
+// console.log("it's alive!🍔")
 
 var titleInputField = document.querySelector('.website-title-input');
 var urlInputField = document.querySelector('.website-URL-input');
