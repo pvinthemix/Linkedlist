@@ -9,12 +9,26 @@ var readButton = document.querySelector('.read-button');
 var deleteButton = document.querySelector('.delete-button');
 var bookmarks = document.querySelector('ul');
 
-enterButton.addEventListener('click', addWebsite);
+enterButton.addEventListener('click', errorMessage);
 titleInputField.addEventListener('keyup', enableButton);
 urlInputField.addEventListener('keyup', enableButton);
 bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
-// enterButton.addEventListener('click', validErrorMessageText); 
+enterButton.addEventListener('click', validErrorMessageText);
+
+
+function errorMessage() {
+  if (titleInputField.value === '' || urlInputField.value === '') {
+    document.querySelector('.error-message').innerText = 'Include title AND valid URL';
+    enterButton.disabled = true;
+  } else {
+    document.querySelector('.error-message').innerText = '';
+    addWebsite();
+    enterButton.disabled = true;
+  }
+
+};
+
 
 
 function addWebsite() {
@@ -43,12 +57,8 @@ function clearInputFields(){
   urlInputField.value = '';
 };
 
-function enableButton(){
-  if (titleInputField.value === '' || urlInputField.value === '') {
-    enterButton.disabled = true;
-  } else {
-    enterButton.disabled = false;
-  }
+function enableButton() {
+  enterButton.disabled = false;
 };
 
 function readLink(event) {
@@ -65,16 +75,16 @@ function deleteBookmark(event) {
   }
 };
 
+savedBookmarkUrl.addEventListener('click', goToWebpage)
 
-// get regex function from kevin for phase
+function goToWebpage(event) {
+  document.location.href = `https://${savedBookmarkUrl.value}/`
+}
 
-// function validErrorMessageText() {
-//   if (titleInputField.value == '' || urlInputField.value == '') {
-//     var errorMessage = document.querySelector('.error-message').innerText = "Include title AND valid URL"
-//     savedBookmarkTitle.innerText = '';
-//     savedBookmarkUrl.innerText = '';
-//   } else (errorMessage).innerText = null;
-// };
+
+// note: get regex function from kevin for phase 2-4
+// 
+
 
 
 // Phase One
