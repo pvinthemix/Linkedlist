@@ -15,7 +15,7 @@ section {
   width: 100%;
 }
 
-/*left side of page*/
+/*input side of page*/
 
 .main-content {
   background-color: #455A64;
@@ -93,7 +93,16 @@ input, select, textarea{
   background-color: #FFD773;
 }
 
-/*right side of page*/
+.link-count{
+  margin-top: 1em;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  border: 3px solid white;
+  margin-left: 40%;
+  width: 25%;
+}
+
+/*bookmark side of page*/
 
 .bookmarks {
   background-color: #CFD8DC;
@@ -162,10 +171,22 @@ hr {
   margin: .5em 0 0 .8em;
 }
 
+.read-button-after {
+  color: #F05A28;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.read-button-after:hover {
+  text-decoration: none;
+}
+
 .delete-button {
   float: right;
   margin: .5em .8em 0 0;
 }
+
+
 
 
 
