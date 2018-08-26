@@ -1,3 +1,5 @@
+console.log("it's alive!🍔")
+
 var titleInputField = document.querySelector('.website-title-input');
 var urlInputField = document.querySelector('.website-URL-input');
 var enterButton = document.querySelector('.enter');
@@ -7,13 +9,28 @@ var readButton = document.querySelector('.read-button');
 var deleteButton = document.querySelector('.delete-button');
 
 
+enterButton.addEventListener('click', addWebsite);
 
 
-
-console.log("it works!")
-
-
-
+function addWebsite() {
+  event.preventDefault();
+  var newBookmark = document.createElement('li');
+  newBookmark.innerHTML =                  
+            `<li class="single-bookmark">
+            <p class="bookmark-website-title">
+            ${titleInputField.value}
+            </p>
+            <hr>
+            <p class="bookmark-website-url">
+            ${urlInputField.value}
+            </p>
+            <hr>
+            <button class="read-button">Read</button>
+            <button class="delete-button"> Delete</button>
+            </li>`
+        var listWebsites = document.querySelector("ul");
+        listWebsites.appendChild(newBookmark);
+};
 
 
 
