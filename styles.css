@@ -40,18 +40,24 @@ section {
 
 .website-title-input, .website-URL-input {
   display: block;
-  height: 4em;
+  height: 1.6em;
   border: 2px solid#CFD8DC;
   width: 65%;
+  font-size: 2em;
 }
 
 .website-title-input {
-  margin-top: 4.5em;
+  margin-top: 1.8em;
 }
 
 .website-URL-input {
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.website-title-input::placeholder, .website-URL-input::placeholder {
+  color: #B8B8B8;
+  padding: .2em;
 }
 
 .enter {
@@ -63,7 +69,6 @@ section {
   color: #FFFFFF;
   font-size: 1.4em;
   font-weight: 800;
-  
 }
 
 .bookmarks {
