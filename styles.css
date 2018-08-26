@@ -44,6 +44,7 @@ section {
   border: 2px solid#CFD8DC;
   width: 65%;
   font-size: 2em;
+  outline-color: #FFD107;
 }
 
 .website-title-input {
@@ -69,6 +70,11 @@ section {
   color: #FFFFFF;
   font-size: 1.4em;
   font-weight: 800;
+  outline: none;
+}
+
+.enter:hover {
+  background-color: #FFD773;
 }
 
 .bookmarks {
@@ -77,8 +83,10 @@ section {
   right: 0px;
   width: 50%;
   height: 100%;
-  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
   overflow: scroll;
+
 }
 
 .single-bookmark {
@@ -106,21 +114,33 @@ section {
   font-size: 1.5em;
 }
 
+.bookmark-website-url:hover {
+  color: #455A64;
+  font-weight: 800;
+  text-decoration: underline #FFC107;
+}
+
 hr {
   margin: 0 1em 0 1em;
   height: 2px;
   border-top: 1px solid #ccc;
 }
 
-.read-button, .delete-button{
-  float: left;
+.read-button, .delete-button {
   border: none;
   text-decoration: underline #F2F4F4;
   color: #455A64;
   font-size: 1.3em;
+  outline: none;
+}
+
+.read-button:hover, .delete-button:hover {
+  text-decoration: underline #FFC107;
+  font-weight: 800;
 }
 
 .read-button {
+  float: left;
   margin: .5em 0 0 .8em;
 }
 
