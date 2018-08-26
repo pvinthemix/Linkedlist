@@ -68,8 +68,8 @@ section {
 input, select, textarea{
   color: #455A64;
   padding: .3em;
-
 }
+
 
 /*enter button*/
 
@@ -93,13 +93,24 @@ input, select, textarea{
   background-color: #FFD773;
 }
 
-.link-count{
+/*link count and error message for url validation*/
+
+.error-message {
+  color: #FFC107;
+  text-align: center;
+  font-weight: 800;
+  height: 2em;
   margin-top: 1em;
+}
+
+.link-count{
+  margin-top: .6em;
   color: #FFFFFF;
   font-size: 1.2em;
   border: 3px solid white;
-  margin-left: 40%;
-  width: 25%;
+  text-align: center;
+  padding: none;
+  width: 80%;
 }
 
 /*bookmark side of page*/
