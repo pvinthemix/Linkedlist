@@ -58,7 +58,13 @@ section {
 
 .website-title-input::placeholder, .website-URL-input::placeholder {
   color: #B8B8B8;
-  padding: .2em;
+  padding: .15em;
+}
+
+input, select, textarea{
+  color: #455A64;
+  padding: .3em;
+
 }
 
 .enter {
