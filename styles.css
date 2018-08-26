@@ -17,17 +17,17 @@ section {
 
 .main-content {
   background-color: #455A64;
-  position: absolute;
   left: 0px;
+  position: absolute;
   width: 50%;
 }
 
 .linked-list-header {
-  text-align: center;
-  margin: 30% 1% 0 1%;
   display: block;
   font-size: 4em;
   font-weight: 800;
+  margin: 30% 1% 0 1%;
+  text-align: center;
 }
 
 .linked, .list {
@@ -39,12 +39,12 @@ section {
 }
 
 .website-title-input, .website-URL-input {
-  display: block;
-  height: 1.6em;
   border: 2px solid#CFD8DC;
-  width: 65%;
+  display: block;
   font-size: 2em;
+  height: 1.6em;
   outline-color: #FFD107;
+  width: 65%;
 }
 
 .website-title-input {
@@ -52,8 +52,8 @@ section {
 }
 
 .website-URL-input {
-  margin-top: 2em;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .website-title-input::placeholder, .website-URL-input::placeholder {
@@ -62,15 +62,15 @@ section {
 }
 
 .enter {
-  display: block;
-  height: 2em;
-  width: 65%;
   background-color: #FFC107;
   border: none;
   color: #FFFFFF;
+  display: block;
   font-size: 1.4em;
   font-weight: 800;
+  height: 2em;
   outline: none;
+  width: 65%;
 }
 
 .enter:hover {
@@ -79,39 +79,38 @@ section {
 
 .bookmarks {
   background-color: #CFD8DC;
+  height: 100%;
+  list-style: none;
+  overflow: scroll;
+  padding-left: 0;
   position: absolute;
   right: 0px;
   width: 50%;
-  height: 100%;
-  list-style: none;
-  padding-left: 0;
-  overflow: scroll;
 
 }
 
 .single-bookmark {
+  background-color: #FFFFFF;
   border: 2px solid #607D8B;
   height: 12em;
-  width: 94%;
-  background-color: #FFFFFF;
   margin-top: 1.5em;
+  width: 94%;
 }
 
 .bookmark-website-title {
   color: #455A64;
-  padding-left: .5em;
   font-size: 2.2em;
   font-weight: 800;
   margin-top: .3em;
-  padding-bottom: .3em;
+  padding: 0 0 .3em .5em;
 }
 
 .bookmark-website-url {
   color: #607D8B;
+  font-size: 1.5em;
+  margin-top: .6em;
   padding: 0 0 .8em 1em;
   text-decoration: underline #F2F4F4;
-  margin-top: .6em;
-  font-size: 1.5em;
 }
 
 .bookmark-website-url:hover {
@@ -121,22 +120,22 @@ section {
 }
 
 hr {
-  margin: 0 1em 0 1em;
-  height: 2px;
   border-top: 1px solid #ccc;
+  height: 2px;
+  margin: 0 1em 0 1em;
 }
 
 .read-button, .delete-button {
   border: none;
-  text-decoration: underline #F2F4F4;
   color: #455A64;
   font-size: 1.3em;
   outline: none;
+  text-decoration: underline #F2F4F4;
 }
 
 .read-button:hover, .delete-button:hover {
-  text-decoration: underline #FFC107;
   font-weight: 800;
+  text-decoration: underline #FFC107;
 }
 
 .read-button {
