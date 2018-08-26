@@ -14,6 +14,7 @@ titleInputField.addEventListener('keyup', enableButton);
 urlInputField.addEventListener('keyup', enableButton);
 bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
+// enterButton.addEventListener('click', validErrorMessageText); 
 
 
 function addWebsite() {
@@ -67,13 +68,13 @@ function deleteBookmark(event) {
 
 // get regex function from kevin for phase
 
-enterButton.addEventListener('click', function() {
-  if (titleInputField.value == '' || urlInputField.value == '') {
-    var errorMessage = document.querySelector('.error-message').innerText = "Must include both title and URL"
-    savedBookmarkTitle.innerText = '';
-    savedBookmarkUrl.innerText = '';
-  } else (errorMessage).innerText = null;
-});
+// function validErrorMessageText() {
+//   if (titleInputField.value == '' || urlInputField.value == '') {
+//     var errorMessage = document.querySelector('.error-message').innerText = "Include title AND valid URL"
+//     savedBookmarkTitle.innerText = '';
+//     savedBookmarkUrl.innerText = '';
+//   } else (errorMessage).innerText = null;
+// };
 
 
 // Phase One
