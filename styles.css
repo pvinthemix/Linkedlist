@@ -24,23 +24,34 @@ section {
 
 .linked-list-header {
   text-align: center;
-  margin-top: 30%;
+  margin: 35% 1% 0 1%;
   display: block;
-  border: 3px solid black;
   font-size: 4em;
   font-weight: 800;
 }
 
 .linked, .list {
- color: white;
+ color: #FFFFFF;
 }
 
 .logo {
   height: .8em;
 }
 
-.website-title, .website-URL {
+.website-title-input, .website-URL-input {
   display: block;
+  height: 4em;
+  border: 2px solid#CFD8DC;
+  width: 65%;
+}
+
+.website-title-input {
+  margin-top: 4.5em;
+}
+
+.website-URL-input {
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .enter {
