@@ -10,11 +10,6 @@ section {
   height: 100%;
 }
 
-/*.container {
-  display: table;
-  width: 100%;
-}*/
-
 /*input side of page*/
 
 .main-content {
@@ -28,11 +23,13 @@ section {
   display: block;
   font-size: 4em;
   font-weight: 800;
-  margin: 30% 1% 0 1%;
+  margin: 0% 1% 0 1%;
   text-align: center;
+  padding-top: 10px;
 }
 
-.linked, .list {
+.linked, 
+.list {
  color: #FFFFFF;
 }
 
@@ -42,7 +39,8 @@ section {
 
 /*input fields*/
 
-.website-title-input, .website-URL-input {
+.website-title-input, 
+.website-URL-input {
   border: 2px solid#CFD8DC;
   display: block;
   font-size: 2em;
@@ -60,16 +58,18 @@ section {
   margin-top: 2em;
 }
 
-.website-title-input::placeholder, .website-URL-input::placeholder {
+.website-title-input::placeholder, 
+.website-URL-input::placeholder {
   color: #B8B8B8;
   padding: .15em;
 }
 
-input, select, textarea{
+input, 
+select, 
+textarea{
   color: #455A64;
   padding: .3em;
 }
-
 
 /*enter button*/
 
@@ -164,7 +164,8 @@ hr {
 
 /*bookmark buttons*/
 
-.read-button, .delete-button {
+.read-button, 
+.delete-button {
   border: none;
   color: #455A64;
   font-size: 1.3em;
@@ -172,7 +173,8 @@ hr {
   text-decoration: underline #F2F4F4;
 }
 
-.read-button:hover, .delete-button:hover {
+.read-button:hover, 
+.delete-button:hover {
   font-weight: 800;
   text-decoration: underline #FFC107;
 }
@@ -197,8 +199,23 @@ hr {
   margin: .5em .8em 0 0;
 }
 
-
 /*//media queries//*/
+
+@media screen and (max-width: 768px) {
+  .main-content{
+    width: 100%;
+    position: static;
+  }
+  .bookmarks {
+    width: 100%;
+  }
+  .link-count {
+    margin-bottom: 3em;
+  }
+};
+
+
+
 
 
 
