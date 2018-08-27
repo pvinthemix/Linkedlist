@@ -14,7 +14,7 @@ titleInputField.addEventListener('keyup', enableButton);
 urlInputField.addEventListener('keyup', enableButton);
 bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
-enterButton.addEventListener('click', validErrorMessageText);
+// enterButton.addEventListener('click', validErrorMessageText);
 
 
 function errorMessage() {
@@ -82,16 +82,13 @@ function goToWebpage(event) {
 }
 
 
-// note: get regex function from kevin for phase 2-4
-// 
-
+// note: get regex function from kevin for phase 2-4//
 
 
 // Phase One
 // *If it already has the class of .read, it should be removed
 
 // Phase Two
-// If the user omits the title or the URL, the application should not create the link and should instead display an error.
 // The application should be responsive and work equally well on desktop and mobile.
 
 // Phase Three
