@@ -206,13 +206,14 @@ hr {
     width: 100%;
     position: static;
   }
+
   .bookmarks {
     width: 100%;
   }
+
   .link-count {
     margin-bottom: 3em;
   }
-};
 
   .linked-list-header {
     font-size: 4em;
