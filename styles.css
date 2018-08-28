@@ -21,9 +21,9 @@ section {
 
 .linked-list-header {
   display: block;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 800;
-  margin: 0% 1% 0 1%;
+  margin: 15% 1% 0 1%;
   text-align: center;
   padding-top: 10px;
 }
@@ -46,16 +46,16 @@ section {
   font-size: 2em;
   height: 1.6em;
   outline-color: #FFD107;
-  width: 65%;
+  width: 80%;
 }
 
 .website-title-input {
-  margin-top: 1.8em;
+  margin-top: .8em;
 }
 
 .website-URL-input {
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .website-title-input::placeholder, 
@@ -82,7 +82,7 @@ textarea{
   font-weight: 800;
   height: 2em;
   outline: none;
-  width: 65%;
+  width: 80%;
 }
 
 .enter:hover {
@@ -104,13 +104,12 @@ textarea{
 }
 
 .link-count{
-  margin-top: .6em;
+  margin-top: .1em;
   color: #FFFFFF;
-  font-size: 1.2em;
-  border: 3px solid white;
+  font-size: .8em;
+  border: 1px solid white;
   text-align: center;
-  padding: none;
-  width: 80%;
+  width: 50%;
 }
 
 /*bookmark side of page*/
@@ -216,7 +215,7 @@ hr {
   }
 
   .linked-list-header {
-    font-size: 3em;
+    font-size: 2em;
     margin: 0% 1% 0 1%;
     text-align: center;
     padding-top: 5px;
@@ -227,19 +226,19 @@ hr {
     border: 2px solid#CFD8DC;
     display: block;
     font-size: 1.5em;
-    height: .5em;
+    height: 1.5em;
     outline-color: #FFD107;
     width: 80%;
-    padding-bottom: .5em;
   }
 
   .website-title-input {
-    margin-top: .5em;
+    margin-top: .8em;
+    margin-bottom: .8em;
   }
 
   .website-URL-input {
-    margin-bottom: .5em;
-    margin-top: .5em;
+    margin-bottom: .8em;
+    margin-top: .8em;
   }
 
   .enter {
@@ -249,13 +248,13 @@ hr {
     display: block;
     font-size: .8em;
     font-weight: 800;
-    height: 1.5em;
+    height: 2.8em;
     outline: none;
     width: 80%;
     margin-bottom: -2em;
   }
 
-  .link-count{
+  .link-count {
     margin-top: .1em;
     color: #FFFFFF;
     font-size: .2em;
@@ -265,7 +264,6 @@ hr {
     width: 80%;
 
 };
-
 
 
 
