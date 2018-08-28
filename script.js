@@ -69,8 +69,8 @@ function enableButton() {
 
 function readLink(event) {
   var readButton = document.querySelector('read-button');
-  if (event.target.className === 'read-button') {
-  event.target.classList.toggle('read-button-after');
+    if (event.target.className === 'read-button') {
+    event.target.classList.toggle('read-button-after');
   }
 };
 
@@ -84,6 +84,13 @@ function deleteBookmark(event) {
 
 // note: get regex function from kevin for phase 4//
 
+
+                        // Work left to do //
+
+
+// Phase Zero //
+// The URL of the bookmark should be a clickable link//
+
 // Phase Two
 // The application should be responsive and work equally well on desktop and mobile.
 
@@ -91,9 +98,14 @@ function deleteBookmark(event) {
 // The application should be able to keep count of the total number of links currently on the page.
 // The application should be able to keep count of the total number of read and unread links currently on the page.
 
-// Phase Four: The Project Strikes Back
+// Phase Four
 // Add a “Clear Read ” button which clears all the read bookmarks when clicked.
 // The user should not to be able to add a URL that isn’t valid.
+
+
+
+
+
 
 // var clearButton = document.querySelectorAll('.clear');
 
