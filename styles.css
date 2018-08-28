@@ -216,13 +216,57 @@ hr {
   }
 
   .linked-list-header {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0% 1% 0 1%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
+  .website-title-input, 
+  .website-URL-input {
+    border: 2px solid#CFD8DC;
+    display: block;
+    font-size: 1.5em;
+    height: .5em;
+    outline-color: #FFD107;
+    width: 80%;
+    padding-bottom: .5em;
+  }
+
+  .website-title-input {
+    margin-top: .5em;
+  }
+
+  .website-URL-input {
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
+
+  .enter {
+    background-color: #FFC107;
+    border: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: .8em;
+    font-weight: 800;
+    height: 1.5em;
+    outline: none;
+    width: 80%;
+    margin-bottom: -2em;
+  }
+
+  .link-count{
+    margin-top: .1em;
+    color: #FFFFFF;
+    font-size: .2em;
+    border: 3px solid white;
+    text-align: center;
+    padding: none;
+    width: 80%;
+
 };
+
+
 
 
 
