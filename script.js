@@ -14,18 +14,17 @@ titleInputField.addEventListener('keyup', enableButton);
 urlInputField.addEventListener('keyup', enableButton);
 bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
-// enterButton.addEventListener('click', validErrorMessageText);
 
-bookmarks.addEventListener('click', function(event){
+// bookmarks.addEventListener('click', function(event){
 
-  urlInputField = document.querySelector('.website-URL-input').value;
-  var savedBookmarkUrl = document.querySelector('.bookmark-website-url');
-  if (event.target.className === 'bookmark-website-url') {
-    console.log(urlInputField);
-    document.location.href = `https://${savedBookmarkUrl.value}/`
-    // window.open(`${urlInputField}.value`, '_blank');
-  } 
-})
+// urlInputField = document.querySelector('.website-URL-input').value;
+//   var savedBookmarkUrl = document.querySelector('.bookmark-website-url');
+//   if (event.target.className === 'bookmark-website-url') {
+//     console.log(urlInputField);
+//     document.location.href = `https://${savedBookmarkUrl.value}/`
+//     // window.open(`${urlInputField}.value`, '_blank');
+//   } 
+// })
 
 function errorMessage() {
   if (titleInputField.value === '' || urlInputField.value === '') {
@@ -37,8 +36,6 @@ function errorMessage() {
     enterButton.disabled = true;
   }
 };
-
-
 
 function addWebsite() {
   var newBookmark = document.createElement('li');
@@ -78,24 +75,14 @@ function readLink(event) {
 };
 
 function deleteBookmark(event) {
-  event.preventDefault();
-  if (event.target.className ==='delete-button'){;
+  if (event.target.className ==='delete-button') {
   event.target.parentElement.remove();
   }
 };
 
-savedBookmarkUrl.addEventListener('click', goToWebpage)
-
-function goToWebpage(event) {
-  document.location.href = `https://${savedBookmarkUrl.value}/`
-}
 
 
-// note: get regex function from kevin for phase 2-4//
-
-
-// Phase One
-// *If it already has the class of .read, it should be removed
+// note: get regex function from kevin for phase 4//
 
 // Phase Two
 // The application should be responsive and work equally well on desktop and mobile.
@@ -107,6 +94,18 @@ function goToWebpage(event) {
 // Phase Four: The Project Strikes Back
 // Add a “Clear Read ” button which clears all the read bookmarks when clicked.
 // The user should not to be able to add a URL that isn’t valid.
+
+// var clearButton = document.querySelectorAll('.clear');
+
+// clearButton.addEventListener('click', clearReadBookmarks);
+
+// function clearReadBookmarks(event) {
+//   console.log(event)
+//   if (event.target.className === 'read-button') {
+//   event.target.parentElement.remove();
+//   }
+// }
+
 
 
 
