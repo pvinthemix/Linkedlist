@@ -16,6 +16,16 @@ bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
 // enterButton.addEventListener('click', validErrorMessageText);
 
+bookmarks.addEventListener('click', function(event){
+
+  urlInputField = document.querySelector('.website-URL-input').value;
+  var savedBookmarkUrl = document.querySelector('.bookmark-website-url');
+  if (event.target.className === 'bookmark-website-url') {
+    console.log(urlInputField);
+    document.location.href = `https://${savedBookmarkUrl.value}/`
+    // window.open(`${urlInputField}.value`, '_blank');
+  } 
+})
 
 function errorMessage() {
   if (titleInputField.value === '' || urlInputField.value === '') {
@@ -26,7 +36,6 @@ function errorMessage() {
     addWebsite();
     enterButton.disabled = true;
   }
-
 };
 
 
