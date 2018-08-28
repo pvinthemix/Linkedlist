@@ -14,17 +14,13 @@ titleInputField.addEventListener('keyup', enableButton);
 urlInputField.addEventListener('keyup', enableButton);
 bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
+bookmarks.addEventListener('click', directLink);
 
-// bookmarks.addEventListener('click', function(event){
-
-// urlInputField = document.querySelector('.website-URL-input').value;
-//   var savedBookmarkUrl = document.querySelector('.bookmark-website-url');
-//   if (event.target.className === 'bookmark-website-url') {
-//     console.log(urlInputField);
-//     document.location.href = `https://${savedBookmarkUrl.value}/`
-//     // window.open(`${urlInputField}.value`, '_blank');
-//   } 
-// })
+function directLink(){
+if (event.target.classList.contains('bookmark-website-url')) {
+    document.location.href = `https://${event.target.innerText}/`
+  } 
+}
 
 function errorMessage() {
   if (titleInputField.value === '' || urlInputField.value === '') {
@@ -68,11 +64,9 @@ function enableButton() {
 };
 
 function readLink(event) {
-  var readButton = document.querySelector('bookmarks');
-    if (event.target.className === 'read-button') {
+    if (event.target.classList.contains('read-button')) {
     event.target.classList.toggle('read-button-after');
-  } else {
-    (event.target.className === 'read-button-after');
+  } else if (event.target.classList.contains('read-button-after')) {
     event.target.classList.toggle('read-button')
   }
 };
