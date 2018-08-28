@@ -68,11 +68,15 @@ function enableButton() {
 };
 
 function readLink(event) {
-  var readButton = document.querySelector('read-button');
+  var readButton = document.querySelector('bookmarks');
     if (event.target.className === 'read-button') {
     event.target.classList.toggle('read-button-after');
+  } else {
+    (event.target.className === 'read-button-after');
+    event.target.classList.toggle('read-button')
   }
 };
+
 
 function deleteBookmark(event) {
   if (event.target.className ==='delete-button') {
@@ -85,7 +89,7 @@ function deleteBookmark(event) {
 // note: get regex function from kevin for phase 4//
 
 
-                        // Work left to do //
+              // Work left to do //
 
 
 // Phase Zero //
