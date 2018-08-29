@@ -74,6 +74,7 @@ function enableButton() {
 function readLink(event) {
   if (event.target.classList.contains('read-button')) {
   event.target.classList.toggle('read-button-after');
+  event.target.parentElement.classList.toggle('read-card')
   if (event.target.classList.contains('read-button-after')) {
   counterRead++;
   } else {
