@@ -8,6 +8,12 @@ var savedBookmarkUrl = document.querySelector('.bookmark-website-url');
 var readButton = document.querySelector('.read-button');
 var deleteButton = document.querySelector('.delete-button');
 var bookmarks = document.querySelector('ul');
+var counterRead = 0;
+var counterUnread = 0;
+var counterTotalLinks = 0;
+var readCountNumber = document.querySelector('.read-count-number');
+var unreadCountNumber = document.querySelector('.unread-count-number');
+var totalCount = document.querySelector('.total-count');
 
 enterButton.addEventListener('click', errorMessage);
 titleInputField.addEventListener('keyup', enableButton);
@@ -52,6 +58,8 @@ function addWebsite() {
   makeBookMark.appendChild(newBookmark);
   clearInputFields();
   enableButton();
+  counterTotalLinks++;
+  updateCounters();
 };
 
 function clearInputFields(){
@@ -64,18 +72,32 @@ function enableButton() {
 };
 
 function readLink(event) {
-    if (event.target.classList.contains('read-button')) {
-    event.target.classList.toggle('read-button-after');
-  } else if (event.target.classList.contains('read-button-after')) {
-    event.target.classList.toggle('read-button')
+  if (event.target.classList.contains('read-button')) {
+  event.target.classList.toggle('read-button-after');
+  if (event.target.classList.contains('read-button-after')) {
+  counterRead++;
+  } else {
+    counterRead--;
+  }
+  updateCounters();
   }
 };
 
 function deleteBookmark(event) {
-  if (event.target.className ==='delete-button') {
+  if (event.target.classList.contains('delete-button')) {
   event.target.parentElement.remove();
-  }
+  counterTotalLinks--;
+  counterRead--;
+  updateCounters();
+    }
 };
+
+function updateCounters() {
+  // unreadCountNumber = counterTotalLinks - counterRead;
+  readCountNumber.innerText = counterRead;
+  unreadCountNumber.innerText = counterTotalLinks - counterRead;
+  totalCount.innerText = counterTotalLinks;
+}
 
 
 
@@ -91,7 +113,6 @@ function deleteBookmark(event) {
 // The application should be responsive and work equally well on desktop and mobile.
 
 // Phase Three
-// The application should be able to keep count of the total number of links currently on the page.
 // The application should be able to keep count of the total number of read and unread links currently on the page.
 
 // Phase Four
