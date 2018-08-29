@@ -71,7 +71,6 @@ function readLink(event) {
   }
 };
 
-
 function deleteBookmark(event) {
   if (event.target.className ==='delete-button') {
   event.target.parentElement.remove();
@@ -80,14 +79,13 @@ function deleteBookmark(event) {
 
 
 
-// note: get regex function from kevin for phase 4//
+// note: get regex function from graham for phase 4//
 
 
               // Work left to do //
 
 
-// Phase Zero //
-// The URL of the bookmark should be a clickable link//
+
 
 // Phase Two
 // The application should be responsive and work equally well on desktop and mobile.
@@ -114,7 +112,7 @@ function deleteBookmark(event) {
 //   if (event.target.className === 'read-button') {
 //   event.target.parentElement.remove();
 //   }
-// }
+// };
 
 
 
