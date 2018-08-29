@@ -1,4 +1,4 @@
-// console.log("it's alive!🍔")
+
 
 var titleInputField = document.querySelector('.website-title-input');
 var urlInputField = document.querySelector('.website-URL-input');
@@ -74,7 +74,7 @@ function enableButton() {
 function readLink(event) {
   if (event.target.classList.contains('read-button')) {
   event.target.classList.toggle('read-button-after');
-  event.target.parentElement.classList.toggle('read-card')
+  event.target.parentElement.classList.toggle('read-card');
   if (event.target.classList.contains('read-button-after')) {
   counterRead++;
   } else {
@@ -88,13 +88,14 @@ function deleteBookmark(event) {
   if (event.target.classList.contains('delete-button')) {
   event.target.parentElement.remove();
   counterTotalLinks--;
-  counterRead--;
+    if (event.target.parentElement.classList.contains('read-card')) {
+    counterRead--;
+  };
   updateCounters();
-    }
+  }
 };
 
 function updateCounters() {
-  // unreadCountNumber = counterTotalLinks - counterRead;
   readCountNumber.innerText = counterRead;
   unreadCountNumber.innerText = counterTotalLinks - counterRead;
   totalCount.innerText = counterTotalLinks;
@@ -112,9 +113,6 @@ function updateCounters() {
 
 // Phase Two
 // The application should be responsive and work equally well on desktop and mobile.
-
-// Phase Three
-// The application should be able to keep count of the total number of read and unread links currently on the page.
 
 // Phase Four
 // Add a “Clear Read ” button which clears all the read bookmarks when clicked.
