@@ -101,17 +101,7 @@ function updateCounters() {
 };
 
 
-///function in progress to clear read bookmarks
-// var clearButton = document.querySelectorAll('.clear');
 
-// clearButton.addEventListener('click', clearReadBookmarks);
-
-// function clearReadBookmarks(event) {
-//   console.log(event)
-//   if (event.target.className === 'read-button') {
-//   event.target.parentElement.remove();
-//   };
-// };
 
 
 
