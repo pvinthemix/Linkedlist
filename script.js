@@ -54,8 +54,7 @@ function addWebsite() {
             <button class="read-button">Read</button>
             <button class="delete-button">Delete</button>
             </li>`;
-  var makeBookMark = document.querySelector("ul");
-  makeBookMark.appendChild(newBookmark);
+  bookmarks.appendChild(newBookmark);
   clearInputFields();
   enableButton();
   counterTotalLinks++;
