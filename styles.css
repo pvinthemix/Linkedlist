@@ -10,6 +10,7 @@ section {
   height: 100%;
 }
 
+/*input portion*/
 .main-content {
   background-color: #455A64;
   left: 0px;
@@ -19,11 +20,11 @@ section {
 
 .linked-list-header {
   display: block;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 800;
   margin: 30% 1% 0 1%;
+  padding-top: .4em;
   text-align: center;
-  padding-top: 10px;
 }
 
 .linked, 
@@ -45,6 +46,16 @@ section {
   width: 80%;
 }
 
+.bookmark-website-url, 
+.delete-button,
+.enter,
+.read-button, 
+.website-title-input, 
+.website-URL-input
+{
+  cursor: pointer;
+}
+
 .website-title-input {
   margin-top: .8em;
 }
@@ -58,13 +69,6 @@ section {
 .website-URL-input::placeholder {
   color: #B8B8B8;
   padding: .15em;
-}
-
-input, 
-select, 
-textarea{
-  color: #455A64;
-  padding: .3em;
 }
 
 .enter {
@@ -89,19 +93,28 @@ textarea{
 
 .error-message {
   color: #FFC107;
-  text-align: center;
   font-weight: 800;
   height: 2em;
   margin-top: 1em;
+  text-align: center;
 }
 
-.link-count{
-  margin-top: .1em;
+.link-count {
   color: #FFFFFF;
   font-size: 1em;
+  margin-top: .1em;
   text-align: center;
   width: 50%;
 }
+
+.read-count-number,
+.unread-count-number,
+.total-count {
+  margin-left: .3em;
+}
+
+
+/*bookmarks*/
 
 .bookmarks {
   background-color: #CFD8DC;
@@ -117,7 +130,7 @@ textarea{
 .single-bookmark {
   background-color: #FFFFFF;
   border: 2px solid #607D8B;
-  height: 11em;
+  height: 11.5em;
   margin-top: 1.5em;
   width: 94%;
 }
@@ -167,7 +180,7 @@ hr {
 
 .read-button {
   float: left;
-  margin: .5em 0 0 .8em;
+  margin: .6em 0 0 .8em;
 }
 
 .read-button-after {
@@ -182,7 +195,37 @@ hr {
 
 .delete-button {
   float: right;
-  margin: .5em .8em 0 0;
+  margin: .6em .8em 0 0;
+}
+
+
+
+@media screen and (max-width: 1955px) {
+
+  .linked-list-header {
+    font-size: 3em;
+    margin-top: 9em;
+  }
+
+  .link-count{
+  font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  .linked-list-header {
+    font-size: 3em;
+    margin-top: 8em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .linked-list-header {
+    font-size: 3em;
+    margin-top: 8em;
+  }
 }
 
 
@@ -198,68 +241,28 @@ hr {
   }
 
   .link-count {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 
   .linked-list-header {
     font-size: 2em;
-    margin: 0% 1% 0 1%;
-    padding-top: 5px;
+    margin: 0% 1%;
+    padding-top: 1em;
   }
 
-  .website-title-input, 
-  .website-URL-input {
-    font-size: 1.5em;
-    height: 1.5em;
-    width: 80%;
-  }
-
-  .website-title-input {
-    margin-top: .8em;
-    margin-bottom: .8em;
-  }
-
-  .website-URL-input {
-    margin-bottom: .8em;
-    margin-top: .8em;
-  }
-
-  .enter {
-    font-size: .8em;
-    height: 2.8em;
-    margin-bottom: -2em;
+  .error-message {
+    height: 2em;
+    padding-top: 1.2em;
   }
 
   .link-count {
-    margin-top: .1em;
-    font-size: .2em;
-    width: 80%;
-
-  }
-
-  .single-bookmark {
-    height: 7em;
-    margin-top: .6em;
-  }
-
-  .bookmark-website-title {
-    font-size: .65em;
-    margin-top: .3em;
-    padding: 1em 0 .6em 1.6em;
-  }
-
-  .bookmark-website-url {
-    font-size: .65em;
-    margin-top: .6em;
-    padding: 1em 0 .6em 1.6em;
-  }
-
-  .read-button, 
-  .delete-button {
     font-size: .8em;
-};
+    width: 80%;
+  }
 
-}
+ 
+
+
 
 
 

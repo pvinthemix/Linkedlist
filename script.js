@@ -22,11 +22,11 @@ bookmarks.addEventListener('click', deleteBookmark);
 bookmarks.addEventListener('click', readLink);
 bookmarks.addEventListener('click', directLink);
 
-function directLink(){
+function directLink() {
 if (event.target.classList.contains('bookmark-website-url')) {
     document.location.href = `https://${event.target.innerText}/`
   } 
-}
+};
 
 function errorMessage() {
   if (titleInputField.value === '' || urlInputField.value === '') {
@@ -53,7 +53,7 @@ function addWebsite() {
             <hr>
             <button class="read-button">Read</button>
             <button class="delete-button">Delete</button>
-            </li>`
+            </li>`;
   var makeBookMark = document.querySelector("ul");
   makeBookMark.appendChild(newBookmark);
   clearInputFields();
@@ -62,7 +62,7 @@ function addWebsite() {
   updateCounters();
 };
 
-function clearInputFields(){
+function clearInputFields() {
   titleInputField.value = '';
   urlInputField.value = '';
 };
@@ -79,9 +79,9 @@ function readLink(event) {
   counterRead++;
   } else {
     counterRead--;
-  }
+  };
   updateCounters();
-  }
+  };
 };
 
 function deleteBookmark(event) {
@@ -99,30 +99,10 @@ function updateCounters() {
   readCountNumber.innerText = counterRead;
   unreadCountNumber.innerText = counterTotalLinks - counterRead;
   totalCount.innerText = counterTotalLinks;
-}
+};
 
 
-
-// note: get regex function from graham for phase 4//
-
-
-              // Work left to do //
-
-
-
-
-// Phase Two
-// The application should be responsive and work equally well on desktop and mobile.
-
-// Phase Four
-// Add a “Clear Read ” button which clears all the read bookmarks when clicked.
-// The user should not to be able to add a URL that isn’t valid.
-
-
-
-
-
-
+///function in progress to clear read bookmarks
 // var clearButton = document.querySelectorAll('.clear');
 
 // clearButton.addEventListener('click', clearReadBookmarks);
@@ -131,7 +111,7 @@ function updateCounters() {
 //   console.log(event)
 //   if (event.target.className === 'read-button') {
 //   event.target.parentElement.remove();
-//   }
+//   };
 // };
 
 
