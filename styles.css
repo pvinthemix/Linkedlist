@@ -11,6 +11,7 @@ section {
 }
 
 /*input portion*/
+
 .main-content {
   background-color: #455A64;
   left: 0px;
@@ -51,8 +52,7 @@ section {
 .enter,
 .read-button, 
 .website-title-input, 
-.website-URL-input
-{
+.website-URL-input {
   cursor: pointer;
 }
 
@@ -200,15 +200,17 @@ hr {
 
 
 
+/*media queries*/
+
 @media screen and (max-width: 1955px) {
 
   .linked-list-header {
     font-size: 3em;
-    margin-top: 9em;
+    margin-top: 4em;
   }
 
   .link-count{
-  font-size: 2em;
+  font-size: 1em;
   }
 }
 
@@ -216,7 +218,6 @@ hr {
 
   .linked-list-header {
     font-size: 3em;
-    margin-top: 8em;
   }
 }
 
@@ -224,7 +225,6 @@ hr {
 
   .linked-list-header {
     font-size: 3em;
-    margin-top: 8em;
   }
 }
 
@@ -252,13 +252,14 @@ hr {
 
   .error-message {
     height: 2em;
-    padding-top: 1.2em;
+    padding-top: .1em;
   }
 
   .link-count {
     font-size: .8em;
     width: 80%;
   }
+}
 
  
 
