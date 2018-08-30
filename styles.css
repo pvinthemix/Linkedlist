@@ -232,16 +232,12 @@ hr {
 @media screen and (max-width: 768px) {
   
   .main-content{
-    width: 100%;
     position: static;
+    width: 100%;
   }
 
   .bookmarks {
     width: 100%;
-  }
-
-  .link-count {
-    margin-bottom: 2em;
   }
 
   .linked-list-header {
@@ -257,7 +253,13 @@ hr {
 
   .link-count {
     font-size: .8em;
+    margin-bottom: .5em;
     width: 80%;
+  }
+
+  .website-URL-input {
+    margin-bottom: .5em;
+    margin-top: .5em;
   }
 }
 
