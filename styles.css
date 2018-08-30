@@ -10,8 +10,6 @@ section {
   height: 100%;
 }
 
-/*input side of page*/
-
 .main-content {
   background-color: #455A64;
   left: 0px;
@@ -23,7 +21,7 @@ section {
   display: block;
   font-size: 3em;
   font-weight: 800;
-  margin: 15% 1% 0 1%;
+  margin: 30% 1% 0 1%;
   text-align: center;
   padding-top: 10px;
 }
@@ -36,8 +34,6 @@ section {
 .logo {
   height: .8em;
 }
-
-/*input fields*/
 
 .website-title-input, 
 .website-URL-input {
@@ -71,8 +67,6 @@ textarea{
   padding: .3em;
 }
 
-/*enter button*/
-
 .enter {
   background-color: #FFC107;
   border: none;
@@ -93,8 +87,6 @@ textarea{
   background-color: #FFD773;
 }
 
-/*link count and error message for url validation*/
-
 .error-message {
   color: #FFC107;
   text-align: center;
@@ -106,13 +98,10 @@ textarea{
 .link-count{
   margin-top: .1em;
   color: #FFFFFF;
-  font-size: .8em;
-  border: 1px solid white;
+  font-size: 1em;
   text-align: center;
   width: 50%;
 }
-
-/*bookmark side of page*/
 
 .bookmarks {
   background-color: #CFD8DC;
@@ -161,8 +150,6 @@ hr {
   margin: 0 1em 0 1em;
 }
 
-/*bookmark buttons*/
-
 .read-button, 
 .delete-button {
   border: none;
@@ -198,9 +185,9 @@ hr {
   margin: .5em .8em 0 0;
 }
 
-/*//media queries//*/
 
 @media screen and (max-width: 768px) {
+  
   .main-content{
     width: 100%;
     position: static;
@@ -217,17 +204,13 @@ hr {
   .linked-list-header {
     font-size: 2em;
     margin: 0% 1% 0 1%;
-    text-align: center;
     padding-top: 5px;
-}
+  }
 
   .website-title-input, 
   .website-URL-input {
-    border: 2px solid#CFD8DC;
-    display: block;
     font-size: 1.5em;
     height: 1.5em;
-    outline-color: #FFD107;
     width: 80%;
   }
 
@@ -242,63 +225,41 @@ hr {
   }
 
   .enter {
-    background-color: #FFC107;
-    border: none;
-    color: #FFFFFF;
-    display: block;
     font-size: .8em;
-    font-weight: 800;
     height: 2.8em;
-    outline: none;
-    width: 80%;
     margin-bottom: -2em;
   }
 
   .link-count {
     margin-top: .1em;
-    color: #FFFFFF;
     font-size: .2em;
-    border: 3px solid white;
-    text-align: center;
-    padding: none;
     width: 80%;
 
-}
+  }
 
   .single-bookmark {
-  background-color: #FFFFFF;
-  border: 2px solid #607D8B;
-  height: 6em;
-  margin-top: 1.5em;
-  width: 94%;
-}
+    height: 7em;
+    margin-top: .6em;
+  }
 
   .bookmark-website-title {
-    color: #455A64;
     font-size: .65em;
-    font-weight: 800;
     margin-top: .3em;
-    padding: 0 0 .6em 1em;
+    padding: 1em 0 .6em 1.6em;
   }
 
   .bookmark-website-url {
-    color: #607D8B;
     font-size: .65em;
     margin-top: .6em;
-    padding: 0 0 .6em 1em;
-    text-decoration: underline #F2F4F4;
+    padding: 1em 0 .6em 1.6em;
   }
 
   .read-button, 
   .delete-button {
-    border: none;
-    color: #455A64;
     font-size: .8em;
-    outline: none;
-    text-decoration: underline #F2F4F4;
-}
+};
 
-;
+}
 
 
 
